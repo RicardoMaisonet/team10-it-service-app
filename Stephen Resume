@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephen Hagadus | IT Technician</title>
+
+<style>
+    :root {
+        color-scheme: dark;
+        font-family: Inter, Arial, sans-serif;
+        background: #060b16;
+        color: #e2e8f0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        min-height: 100%;
+    }
+
+    body {
+        margin: 0;
+        line-height: 1.65;
+        background-image:
+            linear-gradient(180deg, rgba(8, 12, 22, 0.92), rgba(5, 7, 17, 0.92)),
+            radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.14), transparent 18%),
+            radial-gradient(circle at 90% 20%, rgba(168, 85, 247, 0.14), transparent 18%),
+            radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.08), transparent 18%),
+            url('https://images.pexels.com/photos/3419484/pexels-photo-3419484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-color: #050711;
+        background-position: center 20%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+        background-size: 24px 24px;
+        opacity: 0.22;
+        pointer-events: none;
+    }
+
+    header {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 72px 24px 88px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: clamp(3rem, 5vw, 4.5rem);
+        letter-spacing: 0.08em;
+        color: #f8fafc;
+        text-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    header p {
+        margin: 18px auto 0;
+        max-width: 760px;
+        font-size: 1.05rem;
+        color: #cbd5e1;
+        line-height: 1.8;
+    }
+
+    header::after {
+        content: "";
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        right: -80px;
+        top: -80px;
+        background: radial-gradient(circle, rgba(56, 189, 248, 0.18), transparent 55%);
+        filter: blur(30px);
+        pointer-events: none;
+    }
+
+    .page-container {
+        max-width: 980px;
+        margin: -60px auto 40px;
+        padding: 0 18px 32px;
+        position: relative;
+        z-index: 1;
+    }
+
+    section.card {
+        background: rgba(15, 23, 42, 0.92);
+        border: 1px solid rgba(148, 163, 184, 0.16);
+        backdrop-filter: blur(20px);
+        border-radius: 28px;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
+        margin: 24px 0;
+        padding: 34px;
+    }
+
+    .section-grid {
+        display: grid;
+        gap: 24px;
+    }
+
+    .card h2 {
+        margin-top: 0;
+        color: #7dd3fc;
+        font-size: 1.6rem;
+        border-bottom: 1px solid rgba(125, 211, 252, 0.24);
+        padding-bottom: 12px;
+    }
+
+    p, .experience-item span {
+        color: #cbd5e1;
+    }
+
+    .skills-list,
+    .contact-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+    }
+
+    .skills-list li,
+    .contact-list li {
+        padding: 16px 18px;
+        border-radius: 18px;
+        background: rgba(15, 23, 42, 0.76);
+        border: 1px solid rgba(71, 85, 105, 0.2);
+        color: #e2e8f0;
+    }
+
+    .experience-item {
+        margin-bottom: 20px;
+    }
+
+    .experience-item strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #f8fafc;
+        font-size: 1.05rem;
+    }
+
+    .experience-item span {
+        display: inline-block;
+        font-size: 0.96rem;
+        color: #94a3b8;
+    }
+
+    .highlight {
+        color: #38bdf8;
+        font-weight: 700;
+    }
+
+    .tagline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 18px;
+        color: #38bdf8;
+        font-weight: 600;
+    }
+
+    .tagline::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: #38bdf8;
+        box-shadow: 0 0 20px rgba(56, 189, 248, 0.8);
+    }
+
+    @media (min-width: 720px) {
+        .section-grid {
+            grid-template-columns: 1.25fr 0.75fr;
+        }
+
+        section.card {
+            padding: 38px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Stephen Hagadus</h1>
+    <p>IT Technician focused on delivering resilient Linux and network infrastructure, accelerating incident response, and automating operational workflows for enterprise-grade environments.</p>
+    <div class="tagline">Linux Systems & Administration · Network Reliability Engineering · Cloud Automation & Infrastructure as Code</div>
+</header>
+
+<main class="page-container">
+    <section class="card">
+        <h2>About Me</h2>
+        <p>Proven IT Technician with hands-on experience strengthening Linux systems, optimizing network operations, and supporting cloud infrastructure. Skilled in incident management, ITIL-driven service delivery, and automation that improves uptime and accelerates problem resolution across distributed environments.</p>
+    </section>
+
+    <div class="section-grid">
+        <section class="card">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Linux administration (CompTIA Linux+)</li>
+                <li>CompTIA Network+ certified fundamentals</li>
+                <li>CompTIA A+ support and hardware troubleshooting</li>
+                <li>ITIL certified service management</li>
+                <li>Networking fundamentals: DNS, DHCP, MPLS</li>
+                <li>Network operations and monitoring</li>
+                <li>Cloud platforms: Azure and AWS basics</li>
+                <li>Technical support and troubleshooting</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><span class="highlight">Email:</span> Hagadus@gmail.com</li>
+                <li><span class="highlight">Location:</span> Austin, Texas</li>
+                <li><span class="highlight">LinkedIn:</span> linkedin.com/in/StephenHagadus</li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="card">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <strong>IT Technician – Penske Automotive Group</strong>
+            <span>Delivered hands-on IT support and infrastructure maintenance for multiple dealership locations, including Windows and Linux systems, endpoint imaging, and hardware rollouts. Performed advanced network troubleshooting (DNS, DHCP, VLANs, switch/router configuration) and resolved connectivity and performance incidents across sites. Managed device provisioning, OS deployment, patching workflows, and hardware lifecycle tasks (workstations, printers, servers), while keeping accurate asset inventories and documentation. Coordinated escalations with vendors and cross-functional teams, drove process improvements and automation for deployments, and provided user training to reduce recurring incidents and improve overall uptime. Supported dealerships such as Lexus of Austin, BMW of Austin, Audi North Austin, and Land Rover Austin.</span>
+        </div>
+        <div class="experience-item">
+            <strong>Incident Manager / Network Engineer – Spectrum Communications</strong>
+            <span>Led 24/7 network operations and incident management for a large-scale service environment, owning triage, escalation, and incident closure workflows to minimize customer impact. Proactively monitored infrastructure and performance metrics, identified root causes, and executed corrective actions across routing, switching, and service-edge devices. Coordinated cross-team incident resolution with engineering, field operations, and vendor partners, produced post-incident reports, and implemented remediation to prevent recurrence. Managed support for end-user systems, maintained both Linux and Windows platforms, and introduced automation and runbooks that reduced mean-time-to-repair and improved overall service reliability.</span>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
